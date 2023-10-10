@@ -1,0 +1,181 @@
+*, html, body, ::before, ::after{
+  padding: 0;
+  margin: 0;
+}
+
+html,body{
+  height: 100%;
+}
+
+body{
+  font-family: 'Hanken Grotesk', sans-serif;
+
+  --ple-blue: hsl(248, 32%, 94%);
+  --ple-ylwgreen: hsl(104, 28%, 96%);
+
+  --ple-red: hsl(6, 100%, 98%);
+  --ple-yellow: hsl(42, 100%, 97%);
+  --ple-green: hsl(173, 53%, 97%);
+  --ple-purple: hsl(240, 71%, 97%);
+
+  --strong-red: hsl(0, 100%, 67%);
+  --strong-yellow: hsl(39, 100%, 56%);
+  --strong-green: hsl(166, 100%, 37%);
+  --strong-purple: hsl(240, 58%, 41%);
+
+  --ple-shrp-purple: hsl(251, 93%, 86%);
+
+  --prm-white: hsl(0, 0%, 100%);
+  --prm-dark-bluegray: hsl(224, 30%, 27%);
+
+  --gradient-main: linear-gradient(177deg, #6642FE -5.8%, #4122F7 121.67%);
+  --gradient-dark: linear-gradient(180deg, #4828D5 0%, #4533EB 100%);
+
+  background-color: var(--ple-blue);
+  color: black;
+
+}
+.container{
+  padding: 2.5%;
+}
+
+.main{
+  max-width: 720px;
+
+  background-color: var(--prm-white);
+  border-radius: 28px;
+
+  display: flex;
+
+  /*Centering Trick:*/
+  margin: auto;
+
+  box-shadow: 0px 28px 28px 0px #B4B8E2;
+}
+
+.pane{
+  width: 360px;
+  height: 512px;
+  border-radius: 28px;
+  padding: 37px;
+}
+
+.lhs-result-pane{
+  background-image: var(--gradient-main);
+  text-align: center;  
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  color: var(--ple-shrp-purple);
+
+}
+.lhs-result-pane h3{
+  font-size: calc(24rem/16);
+  font-weight: 500;
+
+  margin-bottom: 32px;
+}
+.result{
+  width: 194px;
+  height: 194px;
+  background-image: var(--gradient-dark);
+  border-radius: 50%;
+
+  /* Centering Trick */
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 45px;
+
+  line-height: 40px;  /*It works but not preety darn good*/
+}
+.result h1{
+  font-size: calc(64rem/16);
+  font-weight: 800;
+  color: var(--prm-white);
+}
+.result h6{
+  font-size: calc(20rem/16);
+}
+
+.lhs-result-pane h2{
+  font-size: calc(32rem/16);
+  font-weight: 600;
+  color: var(--prm-white);
+
+  margin-bottom: 19px;
+}
+
+.lhs-result-pane p{
+  font-size: calc(16rem/16);
+  width: 241px;
+
+  margin: 0 auto; /* Centering Trick */
+}
+
+/* Right Hand Side Pane */
+.rhs-summary-pane{
+  background-color: var(--ple-ylwgreen);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 0 auto;
+}
+
+.rhs-summary-pane h3{
+  margin-bottom: 26px;
+  font-size: calc(20rem/16);
+  font-weight: 600;
+  color: black;
+}
+.summary-data-wrapper{
+  margin-bottom: 46px;
+}
+
+.summary-box{
+  padding: 15px 20px;
+  background-color: var(--ple-shrp-purple);
+  margin-bottom: 14px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary-box:last-child{
+  margin-bottom: 0;
+}
+
+.summary-box.reaction{
+  background-color: var(--ple-red);
+}
+.summary-box.memory{
+  background-color: var(--ple-yellow);
+}
+.summary-box.verbal{
+  background-color: var(--ple-green);
+}
+.summary-box.visual{
+  background-color: var(--ple-purple);
+}
+
+.summary-title{
+  margin-left: -71.5px;
+}
+
+
+.btn-continue{
+  padding: 17px 98px;
+  border-radius: 35.75px;
+  background: var(--prm-dark-bluegray);
+
+  min-width: 100%;
+  margin: 0 auto;
+
+  color: var(--prm-white);
+  font-size: calc(20rem/16);
+  font-weight: 600;
+
+  border: solid transparent;
+}
