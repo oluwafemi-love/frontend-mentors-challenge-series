@@ -183,6 +183,9 @@ body{
 
   border: solid transparent;
 }
+.btn-continue:hover{
+  background: linear-gradient(180deg, #623EFD 0%, #4528F9 100%);
+}
 
 @media (max-width: 435px){
 
